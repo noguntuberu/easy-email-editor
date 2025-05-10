@@ -8,9 +8,9 @@ importers:
 
   .:
     dependencies:
-      easy-email-core:
-        specifier: ^4.3.6
-        version: 4.16.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@go-mailer/easy-email-core':
+        specifier: ^4.16.6
+        version: 4.16.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       final-form:
         specifier: ^4.20.4
         version: 4.20.10
@@ -142,6 +142,12 @@ packages:
   '@eslint/eslintrc@0.4.3':
     resolution: {integrity: sha512-J6KFFz5QCYUJq3pf0mjEcCJVERbzv71PUIDczuh9JkwGEzced6CO5ADLHB1rbf/+oPBtoPfMYNOpGDzCANlbXw==}
     engines: {node: ^10.12.0 || >=12.0.0}
+
+  '@go-mailer/easy-email-core@4.16.6':
+    resolution: {integrity: sha512-JAccqPQVQaiABsgMvsohugmZylxAAjAyKNC9NTPvRU68Dw1wRcOO8OzEPPu4Bwp7Db9ZzeC9XX86HOdr1X0EhA==}
+    peerDependencies:
+      react: ^18.2.0
+      react-dom: ^18.2.0
 
   '@humanwhocodes/config-array@0.5.0':
     resolution: {integrity: sha512-FagtKFz74XrTl7y6HCzQpwDfXP0yhxe9lHLD1UZxjvZIcbyRz8zTFF/yYNfSfzU414eDwZ1SrO0Qvtyf+wFMQg==}
@@ -760,12 +766,6 @@ packages:
 
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
-
-  easy-email-core@4.16.3:
-    resolution: {integrity: sha512-18gIKfMVw8T1pxuID8JCo8gevhPI3Q70/qslmBk0Pt0/IBgpZljpYORc/ELKfxwj1564sr53myXBsFbtGdVEbw==}
-    peerDependencies:
-      react: ^18.2.0
-      react-dom: ^18.2.0
 
   editorconfig@1.0.4:
     resolution: {integrity: sha512-L9Qe08KWTlqYMVvMcTIvMAdl1cDUubzRNYL+WfA4bLDMHe4nemKkpmYzkznE1FwLKu0EEmy6obgQKzMJrg4x9Q==}
@@ -2295,6 +2295,15 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@go-mailer/easy-email-core@4.16.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      he: 1.2.0
+      js-beautify: 1.15.4
+      lodash: 4.17.21
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      uuid: 8.3.2
+
   '@humanwhocodes/config-array@0.5.0':
     dependencies:
       '@humanwhocodes/object-schema': 1.2.1
@@ -2974,15 +2983,6 @@ snapshots:
       gopd: 1.2.0
 
   eastasianwidth@0.2.0: {}
-
-  easy-email-core@4.16.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
-    dependencies:
-      he: 1.2.0
-      js-beautify: 1.15.4
-      lodash: 4.17.21
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      uuid: 8.3.2
 
   editorconfig@1.0.4:
     dependencies:

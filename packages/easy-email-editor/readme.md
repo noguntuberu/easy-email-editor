@@ -7,20 +7,20 @@ Email render and preview container.
 ## usage
 
 ```sh
-$ npm install --save easy-email-editor
+$ npm install --save @go-mailer/easy-email-editor
 ```
 
 or
 
 ```sh
-$ yarn add easy-email-editor
+$ yarn add @go-mailer/easy-email-editor
 ```
 
 ```js
 import React from 'react';
-import { BlockManager } from 'easy-email-core';
-import { EmailEditor, EmailEditorProvider } from 'easy-email-editor';
-import 'easy-email-editor/lib/style.css';
+import { BlockManager } from '@go-mailer/easy-email-core';
+import { EmailEditor, EmailEditorProvider } from '@go-mailer/easy-email-editor';
+import '@go-mailer/easy-email-editor/lib/style.css';
 
 const initialValues = {
   subject: 'Welcome to Easy-email',

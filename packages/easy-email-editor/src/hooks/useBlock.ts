@@ -8,7 +8,7 @@ import {
   getValueByIdx,
   BlockManager,
   createBlockDataByType,
-} from 'easy-email-core';
+} from '@go-mailer/easy-email-core';
 import { cloneDeep, debounce, get } from 'lodash';
 import { useCallback, useContext } from 'react';
 
@@ -94,8 +94,7 @@ export function useBlock() {
       const fixedBlock = BlockManager.getBlockByType(child.type);
       if (!fixedBlock?.validParentType.includes(parent.type)) {
         console.error(
-          `${block.type} cannot be used inside ${
-            parentBlock.type
+          `${block.type} cannot be used inside ${parentBlock.type
           }, only inside: ${block.validParentType.join(', ')}`
         );
         return;
