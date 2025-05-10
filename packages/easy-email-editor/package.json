@@ -2,7 +2,7 @@
   "name": "@go-mailer/easy-email-editor",
   "license": "MIT",
   "description": "Email editor",
-  "version": "4.16.8",
+  "version": "4.16.9",
   "author": "noguntuberu",
   "repository": {
     "type": "git",
@@ -68,7 +68,7 @@
     "vite": "^2.6.14"
   },
   "peerDependencies": {
-    "easy-email-core": "^4.3.6",
+    "@go-mailer/easy-email-core": "^4.16.6",
     "mjml-browser": "^4.10.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
