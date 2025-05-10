@@ -5,7 +5,7 @@ import {
   useFocusIdx,
 } from '@go-mailer/easy-email-editor';
 import { useAddToCollection } from '@extensions/hooks/useAddToCollection';
-import { getParentIdx } from 'easy-email-core';
+import { getParentIdx } from '@go-mailer/easy-email-core';
 import React from 'react';
 import { ToolItem } from './ToolItem';
 
