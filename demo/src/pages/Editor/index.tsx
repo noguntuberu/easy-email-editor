@@ -31,7 +31,7 @@ import { Stack } from '@demo/components/Stack';
 import { pushEvent } from '@demo/utils/pushEvent';
 import { UserStorage } from '@demo/utils/user-storage';
 
-import { AdvancedType, IBlockData, JsonToMjml } from 'easy-email-core';
+import { AdvancedType, BasicType, IBlockData, JsonToMjml } from 'easy-email-core';
 import { ExtensionProps, StandardLayout } from 'easy-email-extensions';
 import { AutoSaveAndRestoreEmail } from '@demo/components/AutoSaveAndRestoreEmail';
 
@@ -44,6 +44,7 @@ import enUS from '@arco-design/web-react/es/locale/en-US';
 
 import { useShowCommercialEditor } from '@demo/hooks/useShowCommercialEditor';
 import { useWindowSize } from 'react-use';
+import { AdvancedAccordion } from '../../../../packages/easy-email-core/src/blocks/advanced/blocks';
 
 const defaultCategories: ExtensionProps['categories'] = [
   {
@@ -107,6 +108,12 @@ const defaultCategories: ExtensionProps['categories'] = [
         payload: [['25%', '25%', '25%', '25%']],
       },
     ],
+  },
+  {
+    label: 'Custom',
+    active: false,
+    displayType: 'grid',
+    blocks: [{ type: BasicType.ACCORDION, payload: AdvancedAccordion }],
   },
 ];
 

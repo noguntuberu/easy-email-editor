@@ -14,7 +14,13 @@ import { FontFamily } from '../../attributes/FontFamily';
 import { TextDecoration } from '../../attributes/TextDecoration';
 import { LineHeight } from '../../attributes/LineHeight';
 import { LetterSpacing } from '../../attributes/LetterSpacing';
-import { Collapse, Grid, Popover, Space, Button as ArcoButton } from '@arco-design/web-react';
+import {
+  Collapse,
+  Grid,
+  Popover,
+  Space,
+  Button as ArcoButton,
+} from '@arco-design/web-react';
 import { TextField } from '../../../../components/Form';
 import { IconFont, useEditorProps, useFocusIdx } from 'easy-email-editor';
 import { AttributesPanelWrapper } from '../../attributes/AttributesPanelWrapper';
@@ -22,6 +28,7 @@ import { MergeTags } from '../../attributes';
 import { useField } from 'react-final-form';
 import { ClassName } from '../../attributes/ClassName';
 import { CollapseWrapper } from '../../attributes/CollapseWrapper';
+import { percentAdapter } from '../../adapter/percent.adapter';
 
 export function Button() {
   const { focusIdx } = useFocusIdx();
@@ -40,18 +47,18 @@ export function Button() {
         >
           <Space direction='vertical'>
             <TextField
-              label={(
+              label={
                 <Space>
-                  <span>{t('Content')}</span>
+                  <span>{t('Text')}</span>
                   {mergeTags && (
                     <Popover
                       trigger='click'
-                      content={(
+                      content={
                         <MergeTags
                           value={input.value}
                           onChange={input.onChange}
                         />
-                      )}
+                      }
                     >
                       <ArcoButton
                         type='text'
@@ -60,7 +67,7 @@ export function Button() {
                     </Popover>
                   )}
                 </Space>
-              )}
+              }
               name={`${focusIdx}.data.value.content`}
             />
             <Link />
@@ -71,29 +78,24 @@ export function Button() {
           name='0'
           header={t('Dimension')}
         >
-          <Space direction='vertical'>
-            <Grid.Row>
-              <Grid.Col span={11}>
-                <Width />
-              </Grid.Col>
-              <Grid.Col
-                offset={1}
-                span={11}
-              >
-                <FontWeight />
-              </Grid.Col>
-            </Grid.Row>
-
-            <Padding
-              title={t('Padding')}
-              attributeName='padding'
-              showResetAll
-            />
-            <Padding
-              title={t('Inner padding')}
-              attributeName='inner-padding'
-            />
-          </Space>
+          <Grid.Row>
+            <Grid.Col>
+              <Width
+                unitOptions='percent'
+                config={percentAdapter}
+              />
+            </Grid.Col>
+          </Grid.Row>
+          <Space size='medium' />
+          <Padding
+            title={t('Padding')}
+            attributeName='padding'
+            showResetAll
+          />
+          <Padding
+            title={t('Inner padding')}
+            attributeName='inner-padding'
+          />
         </Collapse.Item>
 
         <Collapse.Item

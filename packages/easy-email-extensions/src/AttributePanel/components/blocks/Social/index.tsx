@@ -218,7 +218,7 @@ function SocialElement({
       <Grid.Row>
         <Grid.Col span={11}>
           <TextField
-            label={t('Content')}
+            label={t('Text')}
             name={`${focusIdx}.data.value.elements.[${index}].content`}
             quickchange
           />

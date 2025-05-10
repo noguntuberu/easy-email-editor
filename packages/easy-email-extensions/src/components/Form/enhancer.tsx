@@ -20,6 +20,8 @@ export interface EnhancerProps {
   helpText?: React.ReactNode;
   debounceTime?: number;
   labelHidden?: boolean;
+  value_type?: string;
+  range?: boolean;
 }
 
 const parse = (v: any) => v;
@@ -43,6 +45,7 @@ export default function enhancer<P extends { onChange?: (...rest: any) => any }>
       helpText,
       autoComplete,
       labelHidden,
+      value_type,
       ...rest
     } = props;
 
@@ -56,7 +59,7 @@ export default function enhancer<P extends { onChange?: (...rest: any) => any }>
       };
     }, [props.config, validate]);
 
-    const [currentValue, setCurrentValue] = useState('');
+    const [currentValue, setCurrentValue] = useState(value_type === 'number' ? 0 : '');
     const currentValueRef = useRefState(currentValue);
 
     const layoutStyle = useMemo((): FormItemProps => {
@@ -153,7 +156,12 @@ export default function enhancer<P extends { onChange?: (...rest: any) => any }>
             }, [onBlur, onChange]);
 
             useEffect(() => {
-              setCurrentValue(value);
+              let cleanedValue = value;
+              if (value_type && value_type === 'number' && !props.range) {
+                cleanedValue = Number(value);
+              }
+
+              setCurrentValue(cleanedValue);
             }, [value]);
 
             return (

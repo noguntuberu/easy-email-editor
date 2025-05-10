@@ -14,52 +14,53 @@ export function Link() {
 
   return useMemo(() => {
     return (
-      <Grid.Row>
-        <Grid.Col span={11}>
-          <TextField
-            prefix={<IconLink />}
-            label={
-              <Space>
-                <span>{t('Href')}&nbsp;&nbsp;&nbsp;</span>
-                <Popover
-                  trigger='click'
-                  content={
-                    <MergeTags
-                      value={input.value}
-                      onChange={input.onChange}
+      <>
+        <Grid.Row>
+          <Grid.Col>
+            <TextField
+              prefix={<IconLink />}
+              label={
+                <Space>
+                  <span>{t('Link')}&nbsp;&nbsp;&nbsp;</span>
+                  <Popover
+                    trigger='click'
+                    content={
+                      <MergeTags
+                        value={input.value}
+                        onChange={input.onChange}
+                      />
+                    }
+                  >
+                    <ArcoButton
+                      type='text'
+                      icon={<IconFont iconName='icon-merge-tags' />}
                     />
-                  }
-                >
-                  <ArcoButton
-                    type='text'
-                    icon={<IconFont iconName='icon-merge-tags' />}
-                  />
-                </Popover>
-              </Space>
-            }
-            name={`${focusIdx}.attributes.href`}
-          />
-        </Grid.Col>
-        <Grid.Col
-          offset={1}
-          span={11}
-        >
-          <SelectField
-            label={t('Target')}
-            name={`${focusIdx}.attributes.target`}
-            options={[
-              {
-                value: '',
-                label: t('_self'),
-              },
-              {
-                value: '_blank',
-                label: t('_blank'),
-              },
-            ]}
-          />
-        </Grid.Col>
-      </Grid.Row>
+                  </Popover>
+                </Space>
+              }
+              name={`${focusIdx}.attributes.href`}
+            />
+          </Grid.Col>
+        </Grid.Row>
+        <Grid.Row>
+          <Grid.Col>
+            <SelectField
+              label={t('Target')}
+              name={`${focusIdx}.attributes.target`}
+              options={[
+                {
+                  value: '',
+                  label: t('_self'),
+                },
+                {
+                  value: '_blank',
+                  label: t('_blank'),
+                },
+              ]}
+            />
+          </Grid.Col>
+        </Grid.Row>
+      </>
     );
   }, [focusIdx]);
 }

@@ -1,11 +1,11 @@
 import React, { useCallback, useEffect, useMemo } from 'react';
-import { InputWithUnitField } from '../../../components/Form';
+import { SliderField } from '../../../components/Form';
 import { useFocusIdx, Stack, useBlock, TextStyle, IconFont } from 'easy-email-editor';
 import { createBlockDataByType } from 'easy-email-core';
 import { Form, useFormState } from 'react-final-form';
 import { Button, Grid, Space, Tooltip } from '@arco-design/web-react';
 import { get } from 'lodash';
-import { pixelAdapter } from '../adapter';
+import { sliderAdapter } from '../adapter';
 
 export interface PaddingProps {
   title?: string;
@@ -95,12 +95,12 @@ export function Padding(props: PaddingProps = {}) {
                     <Button
                       onClick={onResetPadding}
                       size='mini'
-                      icon={(
+                      icon={
                         <IconFont
                           iconName='icon-remove'
                           size={12}
                         />
-                      )}
+                      }
                     />
                   </Tooltip>
                 )}
@@ -108,44 +108,56 @@ export function Padding(props: PaddingProps = {}) {
 
               <Grid.Row>
                 <Grid.Col span={11}>
-                  <InputWithUnitField
+                  <SliderField
+                    min={0}
+                    max={100}
                     label={t('Top (px)')}
                     name='top'
                     autoComplete='off'
-                    config={pixelAdapter}
+                    value_type='number'
+                    config={sliderAdapter}
                   />
                 </Grid.Col>
                 <Grid.Col
-                  offset={1}
+                  offset={2}
                   span={11}
                 >
-                  <InputWithUnitField
+                  <SliderField
+                    min={0}
+                    max={100}
                     label={t('Left (px)')}
                     name='left'
                     autoComplete='off'
-                    config={pixelAdapter}
+                    value_type='number'
+                    config={sliderAdapter}
                   />
                 </Grid.Col>
               </Grid.Row>
 
               <Grid.Row>
                 <Grid.Col span={11}>
-                  <InputWithUnitField
+                  <SliderField
+                    min={0}
+                    max={100}
                     label={t('Bottom (px)')}
                     name='bottom'
-                    config={pixelAdapter}
+                    value_type='number'
+                    config={sliderAdapter}
                     autoComplete='off'
                   />
                 </Grid.Col>
                 <Grid.Col
-                  offset={1}
+                  offset={2}
                   span={11}
                 >
-                  <InputWithUnitField
+                  <SliderField
+                    min={0}
+                    max={100}
                     label={t('Right (px)')}
                     name='right'
                     autoComplete='off'
-                    config={pixelAdapter}
+                    value_type='number'
+                    config={sliderAdapter}
                   />
                 </Grid.Col>
               </Grid.Row>

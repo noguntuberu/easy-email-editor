@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react';
-import { InputWithUnitField } from '../../../components/Form';
+import { SliderField } from '../../../components/Form';
 import { useFocusIdx, useBlock } from 'easy-email-editor';
 import { BasicType, getParentByIdx } from 'easy-email-core';
 import { InputWithUnitProps } from '@extensions/components/Form/InputWithUnit';
@@ -31,12 +31,12 @@ export function Width({
   );
 
   return (
-    <InputWithUnitField
+    <SliderField
       validate={validate}
       label={t('Width')}
       inline={inline}
       name={`${focusIdx}.attributes.width`}
-      unitOptions={unitOptions}
+      value_type='number'
       config={config}
     />
   );
