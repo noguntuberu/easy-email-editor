@@ -1,6 +1,6 @@
-import { DATA_CONTENT_EDITABLE_IDX } from 'easy-email-editor';
+import { DATA_CONTENT_EDITABLE_IDX } from '@go-mailer/easy-email-editor';
 import { IBoundaryRect, IBoundingPosition, IOperationData } from './type';
-import { AdvancedTableBlock } from 'easy-email-core';
+import { AdvancedTableBlock } from '@go-mailer/easy-email-core';
 
 const getEditorElementClientRect = (target: any) => {
   let left = target.offsetLeft;
@@ -174,7 +174,7 @@ export const getElementsBoundary = (el1: Element, el2: Element): IBoundingPositi
 
 export const checkEventInBoundingRect = (
   rect: IBoundingPosition,
-  { x, y }: { x: number; y: number },
+  { x, y }: { x: number; y: number; },
 ) => {
   return x >= rect.left && x <= rect.right && y <= rect.bottom && y >= rect.top;
 };

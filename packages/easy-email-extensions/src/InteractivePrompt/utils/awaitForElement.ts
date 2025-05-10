@@ -1,8 +1,8 @@
-import { getBlockNodeByIdx } from 'easy-email-editor';
+import { getBlockNodeByIdx } from '@go-mailer/easy-email-editor';
 
 export function awaitForElement<T extends HTMLElement>(idx: string) {
-  let promiseObj: { cancel: () => void; promise: Promise<T> } = {
-    cancel: () => {},
+  let promiseObj: { cancel: () => void; promise: Promise<T>; } = {
+    cancel: () => { },
     promise: Promise.resolve() as any,
   };
   promiseObj.promise = new Promise<T>((resolve) => {

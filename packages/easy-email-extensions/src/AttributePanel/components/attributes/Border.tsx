@@ -5,7 +5,7 @@ import {
   SliderField,
   TextField,
 } from '../../../components/Form';
-import { useFocusIdx } from 'easy-email-editor';
+import { useFocusIdx } from '@go-mailer/easy-email-editor';
 import { Grid } from '@arco-design/web-react';
 import { percentAdapter } from '../adapter/percent.adapter';
 import { pixelAdapter } from '../adapter';

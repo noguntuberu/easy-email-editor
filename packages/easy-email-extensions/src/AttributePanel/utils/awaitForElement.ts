@@ -1,4 +1,4 @@
-import { getBlockNodeByIdx } from 'easy-email-editor';
+import { getBlockNodeByIdx } from '@go-mailer/easy-email-editor';
 
 export function awaitForElement<T extends HTMLElement>(idx: string) {
 

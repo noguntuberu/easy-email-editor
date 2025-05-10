@@ -1,7 +1,13 @@
 import React, { useCallback, useEffect, useMemo } from 'react';
 import { SliderField } from '../../../components/Form';
-import { useFocusIdx, Stack, useBlock, TextStyle, IconFont } from 'easy-email-editor';
-import { createBlockDataByType } from 'easy-email-core';
+import {
+  useFocusIdx,
+  Stack,
+  useBlock,
+  TextStyle,
+  IconFont,
+} from '@go-mailer/easy-email-editor';
+import { createBlockDataByType } from '@go-mailer/easy-email-core';
 import { Form, useFormState } from 'react-final-form';
 import { Button, Grid, Space, Tooltip } from '@arco-design/web-react';
 import { get } from 'lodash';

@@ -7,7 +7,7 @@ import {
   getTdBoundaryIndex,
   getBoundaryRectAndElement,
 } from './util';
-import { AdvancedTableBlock } from 'easy-email-core';
+import { AdvancedTableBlock } from '@go-mailer/easy-email-core';
 
 interface IBorderTool {
   top: Element;
@@ -20,7 +20,7 @@ class TableColumnTool {
   borderTool = {} as IBorderTool;
   dragging = false;
   showBorderTool = false;
-  startRect = {} as { width: number; height: number }; // start td rect
+  startRect = {} as { width: number; height: number; }; // start td rect
   startTdTop = 0; // update when click
   startTdLeft = 0; //  update when click
   endTdTop = 0; // will update by mouse move

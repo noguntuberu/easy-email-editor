@@ -1,15 +1,15 @@
-import { IBlockData, BlockManager, getParentIdx } from 'easy-email-core';
+import { IBlockData, BlockManager, getParentIdx } from '@go-mailer/easy-email-core';
 import { get, cloneDeep } from 'lodash';
 
 export function getContextMergeTags(
-  mergeTags: { [key: string]: any },
-  context: { [key: string]: any },
+  mergeTags: { [key: string]: any; },
+  context: { [key: string]: any; },
   idx: string,
 ) {
   const loop = (
     currentIdx: string,
-    combineMergeTags: { [key: string]: any },
-  ): { [key: string]: any } => {
+    combineMergeTags: { [key: string]: any; },
+  ): { [key: string]: any; } => {
     const parentBlockData = get(context, currentIdx) as IBlockData | undefined;
     if (!parentBlockData) return combineMergeTags;
 

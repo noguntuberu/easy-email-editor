@@ -9,10 +9,10 @@
       "@extensions/*": [
         "./src/*"
       ],
-      "easy-email-core": [
+      "@go-mailer/easy-email-core": [
         "../easy-email-core"
       ],
-      "easy-email-editor": [
+      "@go-mailer/easy-email-editor": [
         "../easy-email-editor"
       ]
     }

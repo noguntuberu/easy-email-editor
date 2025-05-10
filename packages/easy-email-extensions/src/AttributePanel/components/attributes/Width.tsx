@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 import { SliderField } from '../../../components/Form';
-import { useFocusIdx, useBlock } from 'easy-email-editor';
-import { BasicType, getParentByIdx } from 'easy-email-core';
+import { useFocusIdx, useBlock } from '@go-mailer/easy-email-editor';
+import { BasicType, getParentByIdx } from '@go-mailer/easy-email-core';
 import { InputWithUnitProps } from '@extensions/components/Form/InputWithUnit';
 import { UseFieldConfig } from 'react-final-form';
 

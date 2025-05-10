@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { useFocusIdx, Stack } from 'easy-email-editor';
+import { useFocusIdx, Stack } from '@go-mailer/easy-email-editor';
 import { RadioGroupField } from '../../../components/Form';
 
 const options = [

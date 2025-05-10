@@ -5,17 +5,17 @@ import visualizer from 'rollup-plugin-visualizer';
 export default defineConfig({
   plugins: [
     process.env.ANALYZE === 'true' &&
-      visualizer({
-        open: true,
-        gzipSize: true,
-        brotliSize: true,
-      }),
+    visualizer({
+      open: true,
+      gzipSize: true,
+      brotliSize: true,
+    }),
   ].filter(Boolean) as any,
   resolve: {
     alias: {
       '@extensions': path.resolve('./src'),
-      'easy-email-core': path.resolve('../easy-email-core/lib'),
-      'easy-email-editor': path.resolve('../easy-email-editor/lib'),
+      '@go-mailer/easy-email-core': path.resolve('../easy-email-core/lib'),
+      '@go-mailer/easy-email-editor': path.resolve('../easy-email-editor/lib'),
     },
   },
   define: {},
@@ -39,8 +39,8 @@ export default defineConfig({
         'react-dom/server',
         'mjml-browser',
         'react-final-form',
-        'easy-email-core',
-        'easy-email-editor',
+        '@go-mailer/easy-email-core',
+        '@go-mailer/easy-email-editor',
         'uuid',
       ],
       output: {},
