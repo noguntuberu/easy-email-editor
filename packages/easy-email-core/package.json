@@ -2,7 +2,7 @@
   "name": "@go-mailer/easy-email-core",
   "license": "MIT",
   "description": "Email editor",
-  "version": "4.16.4",
+  "version": "4.16.5",
   "author": "noguntuberu",
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
     "dev": "yarn build --watch",
     "typings": "tsc --declaration --emitDeclarationOnly --project tsconfig.lib.json",
     "build": "rimraf lib  && npm run typings && tsc-alias  && vite build --config vite.config.ts",
+    "build-lite": "rimraf lib && vite build --config vite.config.ts",
     "block": "ts-node -r tsconfig-paths/register scripts/generateBlockJSX.ts",
     "format": "eslint --fix  --ext .tsx,.ts,.tsx src/",
     "test": "jest  --coverage"
