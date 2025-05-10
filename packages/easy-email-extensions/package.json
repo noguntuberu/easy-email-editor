@@ -1,12 +1,12 @@
 {
-  "name": "easy-email-extensions",
+  "name": "@go-mailer/easy-email-extensions",
   "license": "MIT",
   "description": "Email editor",
   "version": "4.16.3",
-  "author": "m-Ryan",
+  "author": "noguntuberu",
   "repository": {
     "type": "git",
-    "url": "git@github.com:zalify/easy-email.git"
+    "url": "git@github.com:noguntuberu/easy-email-editor.git"
   },
   "keywords": [
     "email editor core"
