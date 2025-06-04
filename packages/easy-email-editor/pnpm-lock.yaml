@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@go-mailer/easy-email-core':
-        specifier: ^4.16.6
-        version: 4.16.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^5.0.0
+        version: 5.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       final-form:
         specifier: ^4.20.4
         version: 4.20.10
@@ -143,8 +143,8 @@ packages:
     resolution: {integrity: sha512-J6KFFz5QCYUJq3pf0mjEcCJVERbzv71PUIDczuh9JkwGEzced6CO5ADLHB1rbf/+oPBtoPfMYNOpGDzCANlbXw==}
     engines: {node: ^10.12.0 || >=12.0.0}
 
-  '@go-mailer/easy-email-core@4.16.6':
-    resolution: {integrity: sha512-JAccqPQVQaiABsgMvsohugmZylxAAjAyKNC9NTPvRU68Dw1wRcOO8OzEPPu4Bwp7Db9ZzeC9XX86HOdr1X0EhA==}
+  '@go-mailer/easy-email-core@5.0.0':
+    resolution: {integrity: sha512-thZNSPgJUmUzfv0IHyRK8wIUQRMkozP9rP4j7SVlWugXryY4eu4xG1Yq1PhY/lwCEbt15/cDFzBK6McKkjYb1g==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
@@ -2295,7 +2295,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@go-mailer/easy-email-core@4.16.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@go-mailer/easy-email-core@5.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       he: 1.2.0
       js-beautify: 1.15.4

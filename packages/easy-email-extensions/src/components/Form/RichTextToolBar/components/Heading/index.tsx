@@ -1,4 +1,4 @@
-import { IconFont } from '@';
+import { IconFont } from '@go-mailer/easy-email-editor';
 import { Menu, Popover } from '@arco-design/web-react';
 import React, { useCallback } from 'react';
 import { ToolItem } from '../ToolItem';

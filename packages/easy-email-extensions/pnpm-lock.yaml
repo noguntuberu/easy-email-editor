@@ -12,11 +12,11 @@ importers:
         specifier: ^2.36.1
         version: 2.66.1(@types/react@18.3.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@go-mailer/easy-email-core':
-        specifier: ^4.16.6
-        version: 4.16.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^5.0.0
+        version: 5.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@go-mailer/easy-email-editor':
-        specifier: ^4.16.11
-        version: 4.16.11(@go-mailer/easy-email-core@4.16.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(mjml-browser@4.15.3)(react-dom@18.3.1(react@18.3.1))(react-final-form@6.5.9(final-form@4.20.10)(react@18.3.1))(react@18.3.1)
+        specifier: ^5.0.1
+        version: 5.0.1(@go-mailer/easy-email-core@5.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(mjml-browser@4.15.3)(react-dom@18.3.1(react@18.3.1))(react-final-form@6.5.9(final-form@4.20.10)(react@18.3.1))(react@18.3.1)
       codemirror:
         specifier: ^5.63.3
         version: 5.65.19
@@ -853,16 +853,16 @@ packages:
   '@gar/promisify@1.1.3':
     resolution: {integrity: sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==}
 
-  '@go-mailer/easy-email-core@4.16.6':
-    resolution: {integrity: sha512-JAccqPQVQaiABsgMvsohugmZylxAAjAyKNC9NTPvRU68Dw1wRcOO8OzEPPu4Bwp7Db9ZzeC9XX86HOdr1X0EhA==}
+  '@go-mailer/easy-email-core@5.0.0':
+    resolution: {integrity: sha512-thZNSPgJUmUzfv0IHyRK8wIUQRMkozP9rP4j7SVlWugXryY4eu4xG1Yq1PhY/lwCEbt15/cDFzBK6McKkjYb1g==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
 
-  '@go-mailer/easy-email-editor@4.16.11':
-    resolution: {integrity: sha512-yW7NlED54COK0ucHiB9LHcGkchiVWJk3N2QOGVk31HD0DFF1PrNn1yioM3pnoZvDNJEPBUr6yQkyVaRqiAurHA==}
+  '@go-mailer/easy-email-editor@5.0.1':
+    resolution: {integrity: sha512-1oCb768Bh4m7VjcNJ/EGDfPGDop7YFcL1+OQWRPY1Znhs5FHGLUXftMmDLmYIEoF4LxnHnL4c3yn8CUlTKZdSg==}
     peerDependencies:
-      '@go-mailer/easy-email-core': ^4.16.6
+      '@go-mailer/easy-email-core': ^5.0.0
       mjml-browser: ^4.10.4
       react: ^18.2.0
       react-dom: ^18.2.0
@@ -6732,7 +6732,7 @@ snapshots:
 
   '@gar/promisify@1.1.3': {}
 
-  '@go-mailer/easy-email-core@4.16.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@go-mailer/easy-email-core@5.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       he: 1.2.0
       js-beautify: 1.15.4
@@ -6741,9 +6741,9 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
       uuid: 8.3.2
 
-  '@go-mailer/easy-email-editor@4.16.11(@go-mailer/easy-email-core@4.16.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(mjml-browser@4.15.3)(react-dom@18.3.1(react@18.3.1))(react-final-form@6.5.9(final-form@4.20.10)(react@18.3.1))(react@18.3.1)':
+  '@go-mailer/easy-email-editor@5.0.1(@go-mailer/easy-email-core@5.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(mjml-browser@4.15.3)(react-dom@18.3.1(react@18.3.1))(react-final-form@6.5.9(final-form@4.20.10)(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@go-mailer/easy-email-core': 4.16.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@go-mailer/easy-email-core': 5.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       final-form: 4.20.10
       final-form-arrays: 3.1.0(final-form@4.20.10)
       final-form-set-field-touched: 1.0.1(final-form@4.20.10)
