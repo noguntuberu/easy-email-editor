@@ -126,6 +126,7 @@ export function Tools(props: ToolsProps) {
     AvailableTools.Link,
     AvailableTools.Justify,
     AvailableTools.Lists,
+    AvailableTools.Personalization,
     AvailableTools.HorizontalRule,
     AvailableTools.RemoveFormat,
   ];
