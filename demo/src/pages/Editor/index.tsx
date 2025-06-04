@@ -25,18 +25,23 @@ import {
   EmailEditor,
   EmailEditorProvider,
   IEmailTemplate,
-} from 'easy-email-editor';
+} from '@go-mailer/easy-email-editor';
 
 import { Stack } from '@demo/components/Stack';
 import { pushEvent } from '@demo/utils/pushEvent';
 import { UserStorage } from '@demo/utils/user-storage';
 
-import { AdvancedType, BasicType, IBlockData, JsonToMjml } from 'easy-email-core';
-import { ExtensionProps, StandardLayout } from 'easy-email-extensions';
+import {
+  AdvancedType,
+  BasicType,
+  IBlockData,
+  JsonToMjml,
+} from '@go-mailer/easy-email-core';
+import { ExtensionProps, StandardLayout } from '@go-mailer/easy-email-extensions';
 import { AutoSaveAndRestoreEmail } from '@demo/components/AutoSaveAndRestoreEmail';
 
-import 'easy-email-editor/lib/style.css';
-import 'easy-email-extensions/lib/style.css';
+import '@go-mailer/easy-email-editor/lib/style.css';
+import '@go-mailer/easy-email-extensions/lib/style.css';
 import blueTheme from '@arco-themes/react-easy-email-theme/css/arco.css?inline';
 
 import { Uploader } from '@demo/utils/Uploader';
@@ -45,6 +50,7 @@ import enUS from '@arco-design/web-react/es/locale/en-US';
 import { useShowCommercialEditor } from '@demo/hooks/useShowCommercialEditor';
 import { useWindowSize } from 'react-use';
 import { AdvancedAccordion } from '../../../../packages/easy-email-core/src/blocks/advanced/blocks';
+// import { AdvancedAccordion } from '@go-mailer/easy-email-core/src/blocks/advanced/blocks';
 
 const defaultCategories: ExtensionProps['categories'] = [
   {

@@ -2,7 +2,7 @@
   "name": "@go-mailer/easy-email-editor",
   "license": "MIT",
   "description": "Email editor",
-  "version": "4.16.11",
+  "version": "5.0.0",
   "author": "noguntuberu",
   "repository": {
     "type": "git",

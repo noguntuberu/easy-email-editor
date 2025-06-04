@@ -15,6 +15,7 @@ export interface BlockGroup {
 }
 
 export enum AvailableTools {
+  Heading = 'heading',
   MergeTags = 'mergeTags',
   FontFamily = 'fontFamily',
   FontSize = 'fontSize',
@@ -28,6 +29,7 @@ export enum AvailableTools {
   Justify = 'justify',
   Lists = 'lists',
   HorizontalRule = 'horizontalRule',
+  Personalization = 'personalization',
   RemoveFormat = 'removeFormat',
 }
 
@@ -35,6 +37,7 @@ export interface PropsProviderProps {
   children?: React.ReactNode;
   height: string;
   fontList?: { value: string; label: string }[];
+  personalizations?: { value: string; label: string }[];
   onAddCollection?: (payload: CollectedBlock) => void;
   onRemoveCollection?: (payload: { id: string }) => void;
   onUploadImage?: (data: Blob) => Promise<string>;

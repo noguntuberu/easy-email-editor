@@ -10,6 +10,7 @@ import {
   MergeTagBadge,
   AvailableTools,
 } from '@go-mailer/easy-email-editor';
+import { Heading } from '../Heading';
 import { FontFamily } from '../FontFamily';
 import { MergeTags } from '../MergeTags';
 import { useSelectionRange } from '@extensions/AttributePanel/hooks/useSelectionRange';
@@ -23,6 +24,7 @@ import { Italic } from '../Italic';
 import { Bold } from '../Bold';
 import { FontSize } from '../FontSize';
 import { RICH_TEXT_TOOL_BAR } from '@extensions/constants';
+import { Personalization } from '../Personalization';
 
 export interface ToolsProps {
   onChange: (content: string) => any;
@@ -112,6 +114,7 @@ export function Tools(props: ToolsProps) {
 
   const enabledTools = toolbar?.tools ?? [
     AvailableTools.MergeTags,
+    AvailableTools.Heading,
     AvailableTools.FontFamily,
     AvailableTools.FontSize,
     AvailableTools.Bold,
@@ -133,6 +136,14 @@ export function Tools(props: ToolsProps) {
         if (!mergeTags) return [];
         return [
           <MergeTags
+            key={tool}
+            execCommand={execCommand}
+            getPopupContainer={getPopoverMountNode}
+          />,
+        ];
+      case AvailableTools.Heading:
+        return [
+          <Heading
             key={tool}
             execCommand={execCommand}
             getPopupContainer={getPopoverMountNode}
@@ -259,6 +270,14 @@ export function Tools(props: ToolsProps) {
             onClick={() => execCommand('insertHorizontalRule')}
             icon={<IconFont iconName='icon-line' />}
             title={t('Line')}
+          />,
+        ];
+      case AvailableTools.Personalization:
+        return [
+          <Personalization
+            key={tool}
+            execCommand={execCommand}
+            getPopupContainer={getPopoverMountNode}
           />,
         ];
       case AvailableTools.RemoveFormat:
