@@ -24,6 +24,7 @@ export type IPage = IBlockData<
       inline?: 'inline';
     }[];
     extraHeadContent?: string;
+    personalization?: { value: string; label: string }[];
     responsive?: boolean;
     'font-family': string;
     'font-size': string;
@@ -57,7 +58,7 @@ export const Page = createBlock<IPage>({
           fonts: [],
           responsive: true,
           'font-family':
-            '-apple-system, BlinkMacSystemFont, \'Segoe UI\', \'Roboto\', \'Oxygen\', \'Ubuntu\', \'Cantarell\', \'Fira Sans\', \'Droid Sans\',\'Helvetica Neue\', sans-serif',
+            "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans','Helvetica Neue', sans-serif",
           'text-color': '#000000',
         },
       },
