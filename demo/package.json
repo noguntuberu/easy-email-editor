@@ -50,7 +50,7 @@
     "@arco-themes/react-easy-email-theme-purple": "^0.0.3",
     "@go-mailer/easy-email-core": "^5.0.2",
     "@go-mailer/easy-email-editor": "^5.0.2",
-    "@go-mailer/easy-email-extensions": "^5.0.2",
+    "@go-mailer/easy-email-extensions": "^5.0.3",
     "@reduxjs/toolkit": "^1.6.2",
     "@sendgrid/mail": "^7.7.0",
     "@sentry/browser": "^7.11.1",

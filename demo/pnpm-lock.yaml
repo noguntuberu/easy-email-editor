@@ -27,8 +27,8 @@ importers:
         specifier: ^5.0.2
         version: 5.0.2(@go-mailer/easy-email-core@5.0.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(mjml-browser@4.15.3)(react-dom@17.0.2(react@17.0.2))(react-final-form@6.5.9(final-form@4.20.10)(react@17.0.2))(react@17.0.2)
       '@go-mailer/easy-email-extensions':
-        specifier: ^5.0.2
-        version: 5.0.2(@go-mailer/easy-email-core@5.0.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(@go-mailer/easy-email-editor@5.0.2(@go-mailer/easy-email-core@5.0.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(mjml-browser@4.15.3)(react-dom@17.0.2(react@17.0.2))(react-final-form@6.5.9(final-form@4.20.10)(react@17.0.2))(react@17.0.2))(@types/react@19.1.3)(react-dom@17.0.2(react@17.0.2))(react-final-form@6.5.9(final-form@4.20.10)(react@17.0.2))(react@17.0.2)
+        specifier: ^5.0.3
+        version: 5.0.3(@go-mailer/easy-email-core@5.0.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(@go-mailer/easy-email-editor@5.0.2(@go-mailer/easy-email-core@5.0.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(mjml-browser@4.15.3)(react-dom@17.0.2(react@17.0.2))(react-final-form@6.5.9(final-form@4.20.10)(react@17.0.2))(react@17.0.2))(@types/react@19.1.3)(react-dom@17.0.2(react@17.0.2))(react-final-form@6.5.9(final-form@4.20.10)(react@17.0.2))(react@17.0.2)
       '@reduxjs/toolkit':
         specifier: ^1.6.2
         version: 1.9.7(react-redux@7.2.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(redux@4.2.1))(react@17.0.2)
@@ -302,8 +302,8 @@ packages:
       react-dom: ^18.2.0
       react-final-form: ^6.5.7
 
-  '@go-mailer/easy-email-extensions@5.0.2':
-    resolution: {integrity: sha512-i97NQQHUHDxl3A8x4m/7XAF3eGqtmmCFetTipBzA5UDxWgToMWLWiMESyyTbKQUhk1IjGbRrurPC22AwKxV4rw==}
+  '@go-mailer/easy-email-extensions@5.0.3':
+    resolution: {integrity: sha512-yvMo75krJJJJSLRbv2NH06TRVPYDGn0gXvPfAkVwcdRZeQt6//r4NITpZTLnIpwGn9i8xdQqY0dEZYQmC5+ezA==}
     peerDependencies:
       '@go-mailer/easy-email-core': ^5.0.2
       '@go-mailer/easy-email-editor': ^5.0.2
@@ -2067,7 +2067,7 @@ snapshots:
       react-final-form-arrays: 3.1.4(final-form-arrays@3.1.0(final-form@4.20.10))(final-form@4.20.10)(react-final-form@6.5.9(final-form@4.20.10)(react@17.0.2))(react@17.0.2)
       react-use: 17.6.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
 
-  '@go-mailer/easy-email-extensions@5.0.2(@go-mailer/easy-email-core@5.0.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(@go-mailer/easy-email-editor@5.0.2(@go-mailer/easy-email-core@5.0.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(mjml-browser@4.15.3)(react-dom@17.0.2(react@17.0.2))(react-final-form@6.5.9(final-form@4.20.10)(react@17.0.2))(react@17.0.2))(@types/react@19.1.3)(react-dom@17.0.2(react@17.0.2))(react-final-form@6.5.9(final-form@4.20.10)(react@17.0.2))(react@17.0.2)':
+  '@go-mailer/easy-email-extensions@5.0.3(@go-mailer/easy-email-core@5.0.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(@go-mailer/easy-email-editor@5.0.2(@go-mailer/easy-email-core@5.0.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2))(mjml-browser@4.15.3)(react-dom@17.0.2(react@17.0.2))(react-final-form@6.5.9(final-form@4.20.10)(react@17.0.2))(react@17.0.2))(@types/react@19.1.3)(react-dom@17.0.2(react@17.0.2))(react-final-form@6.5.9(final-form@4.20.10)(react@17.0.2))(react@17.0.2)':
     dependencies:
       '@arco-design/web-react': 2.66.1(@types/react@19.1.3)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       '@go-mailer/easy-email-core': 5.0.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
